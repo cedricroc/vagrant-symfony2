@@ -1,0 +1,8 @@
+.DS_Store
+Thumbs.db
+.tags
+.tags_sorted_by_file
+.htaccess.dev
+.vagrant
+Vagrantfile
+puppet.pp

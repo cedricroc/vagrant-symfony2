@@ -1,0 +1,16 @@
+[user]
+    name = __NAME__
+    email = __EMAIL__
+[alias]
+    ci = commit
+    co = checkout
+    br = branch
+    st = !sh -c 'echo "" && git diff --stat && echo "" && git status && echo ""'
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+    cl = !sh -c 'git branch --merged | grep -v \\* | xargs git branch -D'
+[merge]
+    ff = false
+[color]
+    ui = true
+[core]
+    excludesfile = /home/vagrant/.gitignore
